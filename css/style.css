@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  color: #535353;
 }
 
 section.header {
@@ -44,7 +45,7 @@ section.header nav {
   width: 100%;
   height: 8vh;
   padding: 0 70px;
-  background-color: rgba(202, 202, 202, 0.562);
+  background-color: rgba(202, 202, 202, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -87,7 +88,7 @@ section.header nav ul.nav-links {
   top: 8vh;
   left: 0;
   list-style: none;
-  background-color: rgba(202, 202, 202, 0.562);
+  background-color: rgba(202, 202, 202, 0.8);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform .3s;
@@ -225,6 +226,193 @@ section.header nav .burger div:nth-child(3).active {
 }
 
 section.about {
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  section.about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  section.about {
+    margin: 60px 10px;
+  }
+}
+
+section.about h1 {
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  section.about h1 {
+    margin: 0 200px;
+    font-size: 40px;
+  }
+}
+
+section.about div.about-text {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin: 20px 5px;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+@media (min-width: 768px) {
+  section.about div.about-text {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (min-width: 1025px) {
+  section.about div.about-text {
+    margin: 15px 200px 0 0;
+  }
+}
+
+section.about figure.about-img {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+@media (min-width: 768px) {
+  section.about figure.about-img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+section.about figure.about-img div.img-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(221, 221, 221, 0.774);
+  -webkit-animation: opacityBanerChange 7s infinite;
+          animation: opacityBanerChange 7s infinite;
+}
+
+section.about figure.about-img div.img-content:hover {
+  opacity: 1;
+  -webkit-animation: none;
+          animation: none;
+}
+
+section.about figure.about-img div.img-content h4 {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+
+@media (min-width: 411px) {
+  section.about figure.about-img div.img-content h4 {
+    margin-top: 4vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.about figure.about-img div.img-content h4 {
+    margin-top: 10vh;
+  }
+}
+
+section.about figure.about-img div.img-content p {
+  padding: 10px 50px;
+}
+
+section.about figure.about-img div.img-content .btn-contact {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgba(184, 184, 184, 0.548);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@media (min-width: 1024px) {
+  section.about figure.about-img div.img-content .btn-contact {
+    font-size: 22px;
+  }
+}
+
+section.about figure.about-img div.img-content .btn-contact:hover {
+  background-color: #fff;
+}
+
+@-webkit-keyframes opacityBanerChange {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacityBanerChange {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+section.about figure.about-img img {
+  width: 1005;
 }
 /*# sourceMappingURL=style.css.map */
