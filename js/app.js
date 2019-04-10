@@ -22,3 +22,25 @@ const slideNav = () => {
 }
 
 slideNav();
+
+
+// CHANGE OPACITY ON SCROOL
+
+const $headerSection = $('section.header');
+const $aboutSection = $('section.about');
+
+$(document).on('scroll', function () {
+    const scrollPosition = $(document).scrollTop();
+    const sectionAboutOffset = $aboutSection.offset().top;
+
+
+    $headerSection.css('background-color', `rgba(255,255,255,${scrollPosition / sectionAboutOffset})`);
+})
+
+// HIDING NAV ON SCROLL DOWN
+
+let scrollFlag = 0;
+$(window).on('scroll', function () {
+    $('section.header nav').toggleClass('hide', $(window).scrollTop() > scrollFlag);
+    scrollFlag = $(window).scrollTop();
+})

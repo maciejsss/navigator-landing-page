@@ -29,7 +29,11 @@ section.header {
         position: fixed;
         top: 0;
         left: 0;
+        transition: transform .3s;
 
+        &.hide {
+            transform: translateY(-8vh);
+        }
 
         .logo {
             h4 {

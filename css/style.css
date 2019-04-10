@@ -8,7 +8,6 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  height: 200vh;
 }
 
 section.header {
@@ -49,6 +48,15 @@ section.header nav {
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+section.header nav.hide {
+  -webkit-transform: translateY(-8vh);
+          transform: translateY(-8vh);
 }
 
 section.header nav .logo h4 {
@@ -213,5 +221,9 @@ section.header nav .burger div:nth-child(2).active {
 section.header nav .burger div:nth-child(3).active {
   -webkit-transform: translateY(-7px) rotate(45deg);
           transform: translateY(-7px) rotate(45deg);
+}
+
+section.about {
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
