@@ -8,7 +8,8 @@ Sass (SCSS)
 JavaScript  
 wow.js  
 animate.css  
+jQuery  
 RWD  
-Mobile First  
+Mobile First
 
 
