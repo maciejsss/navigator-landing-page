@@ -159,6 +159,7 @@ section.header nav ul.nav-links li a {
   display: block;
   padding: 10px 10px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #535353;
   position: relative;
   overflow: hidden;
