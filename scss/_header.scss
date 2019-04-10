@@ -30,6 +30,7 @@ section.header {
         top: 0;
         left: 0;
         transition: transform .3s;
+        z-index: 100;
 
         &.hide {
             transform: translateY(-8vh);

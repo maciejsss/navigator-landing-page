@@ -3,6 +3,7 @@ section.about {
     flex-direction: column;
     justify-content: space-around;
     margin: 20px 0;
+    overflow: hidden;
 
     @media (min-width: 768px) {
         flex-direction: row;
@@ -41,7 +42,7 @@ section.about {
         height: 40vh;
         position: relative;
         overflow: hidden;
-        animation-delay: .5s;
+        animation-delay: .4s;
 
         @media (min-width: 768px) {
             flex-basis: 30%;
@@ -129,10 +130,6 @@ section.about {
                     opacity: 0;
                 }
             }
-        }
-
-        img {
-            width: 1005;
         }
     }
 }

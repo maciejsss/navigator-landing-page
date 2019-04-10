@@ -53,6 +53,7 @@ section.header nav {
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
+  z-index: 100;
 }
 
 section.header nav.hide {
@@ -236,6 +237,7 @@ section.about {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 20px 0;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -294,8 +296,8 @@ section.about figure.about-img {
   height: 40vh;
   position: relative;
   overflow: hidden;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 @media (min-width: 768px) {
@@ -410,9 +412,5 @@ section.about figure.about-img div.img-content .btn-contact:hover {
   100% {
     opacity: 0;
   }
-}
-
-section.about figure.about-img img {
-  width: 1005;
 }
 /*# sourceMappingURL=style.css.map */
