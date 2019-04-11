@@ -71,7 +71,7 @@ section.header nav .logo h4 {
 
 section.header nav ul.nav-links {
   width: 100%;
-  height: 92vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,11 +260,13 @@ section.about {
 
 section.about h1 {
   text-align: center;
+  font-size: 30px;
 }
 
 @media (min-width: 1025px) {
   section.about h1 {
-    margin: 0 200px;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
     font-size: 40px;
   }
 }
@@ -272,9 +274,10 @@ section.about h1 {
 section.about div.about-text {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  margin: 20px 5px;
+  margin: 30px 5px;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -286,7 +289,9 @@ section.about div.about-text {
 
 @media (min-width: 1025px) {
   section.about div.about-text {
-    margin: 15px 200px 0 0;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin: 15px 0 0 0;
   }
 }
 
@@ -348,6 +353,12 @@ section.about figure.about-img div.img-content h4 {
 
 section.about figure.about-img div.img-content p {
   padding: 10px 50px;
+}
+
+@media (min-width: 1024px) {
+  section.about figure.about-img div.img-content p {
+    font-size: 20px;
+  }
 }
 
 section.about figure.about-img div.img-content .btn-contact {
