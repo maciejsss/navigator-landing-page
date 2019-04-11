@@ -261,6 +261,7 @@ section.about {
 section.about h1 {
   text-align: center;
   font-size: 30px;
+  position: relative;
 }
 
 @media (min-width: 1025px) {
@@ -271,13 +272,37 @@ section.about h1 {
   }
 }
 
+section.about h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: rgba(221, 221, 221, 0.774);
+}
+
+@media (min-width: 768px) {
+  section.about h1::after {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  section.about h1::after {
+    width: 76%;
+  }
+}
+
 section.about div.about-text {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  margin: 30px 5px;
+  margin: 30px 15px;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
   font-size: 20px;
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
