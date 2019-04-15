@@ -1,0 +1,143 @@
+section.our-work {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+        margin-bottom: 20px;
+
+        @media (min-width: 1025px) {
+            flex-basis: 30%;
+            font-size: 40px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70%;
+            height: 2px;
+            margin: 0 auto;
+            background-color: rgba(221, 221, 221, 0.774);
+
+            @media (min-width: 768px) {
+                width: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            // @media (min-width: 1025px) {
+            //     width: 76%;
+            // }
+        }
+    }
+
+    div.gallery-container {
+        width: 100%;
+        padding: 0 10px;
+
+
+        @media (min-width: 768px) {
+            height: 70vh;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 30px;
+        }
+
+        @media (min-width: 1024px) {
+            max-width: 100%;
+            height: 80vh;
+        }
+
+        @media (min-width: 1025px) {
+            max-width: 80%;
+            height: 90vh;
+        }
+
+        figure {
+            overflow: hidden;
+            position: relative;
+            margin: 10px 0;
+
+            @media (min-width: 768px) {
+                margin: 0;
+
+                &.small {
+                    grid-row: span 1;
+                    grid-column: span 1;
+                }
+
+                &.medium {
+                    grid-row: span 2;
+                    grid-column: span 2;
+                }
+
+                &.large {
+                    grid-row: span 3;
+                    grid-column: span 3;
+                }
+
+                &.tall {
+                    grid-row: span 3;
+                    grid-column: span 2;
+                }
+
+                &.wide {
+                    grid-row: span 2;
+                    grid-column: span 3;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #000;
+                    opacity: 0;
+                    z-index: 1;
+                    transition: .3s;
+                }
+
+
+                &:hover::after {
+                    opacity: .6;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: .3s;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            &::before {
+                content: "Lorem!";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 36px;
+                font-weight: bold;
+                z-index: 3;
+                color: #e0e0e0;
+                opacity: 0;
+                transition: .3s;
+            }
+
+            &:hover::before {
+                opacity: 1;
+            }
+        }
+    }
+}
