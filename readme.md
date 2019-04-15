@@ -6,10 +6,11 @@ HTML
 CSS  
 Sass (SCSS)  
 JavaScript  
-wow.js  
-animate.css  
 jQuery  
 RWD  
 Mobile First
+animate.css  
+wow.js  
+lightbox.js
 
 
