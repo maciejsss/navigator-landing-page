@@ -92,18 +92,18 @@ section.our-work {
                     grid-column: span 3;
                 }
 
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: #000;
-                    opacity: 0;
-                    z-index: 1;
-                    transition: .3s;
-                }
+                // &::after {
+                //     content: "";
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     background-color: #000;
+                //     opacity: 0;
+                //     z-index: 1;
+                //     transition: .3s;
+                // }
 
 
                 &:hover::after {

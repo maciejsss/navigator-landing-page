@@ -553,19 +553,6 @@ section.our-work div.gallery-container figure {
     grid-row: span 2;
     grid-column: span 3;
   }
-  section.our-work div.gallery-container figure::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0;
-    z-index: 1;
-    -webkit-transition: .3s;
-    transition: .3s;
-  }
   section.our-work div.gallery-container figure:hover::after {
     opacity: .6;
   }
