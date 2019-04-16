@@ -2,8 +2,8 @@ section.about {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 20px 0;
     overflow: hidden;
+    background-color: #535353;
 
     @media (min-width: 1025px) {
         flex-direction: row;
@@ -14,13 +14,16 @@ section.about {
     @media (min-width: 1025px) {}
 
     h1 {
+        padding-top: 30px;
         text-align: center;
         font-size: 30px;
         position: relative;
+        color: #d3d3d3;
+
 
         @media (min-width: 1025px) {
+            padding-top: 0;
             flex-basis: 30%;
-            // margin: 0 200px;
             font-size: 40px;
         }
 
@@ -45,6 +48,8 @@ section.about {
         animation-delay: .3s;
         font-size: 20px;
         text-align: justify;
+        color: #d3d3d3;
+
 
         @media (min-width: 768px) {
             flex-basis: 30%;
