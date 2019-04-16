@@ -44,3 +44,16 @@ $(window).on('scroll', function () {
     $('section.header nav').toggleClass('hide', $(window).scrollTop() > scrollFlag);
     scrollFlag = $(window).scrollTop();
 })
+
+
+// HOME BUTTON VISIBILITY
+
+const homeBtn = document.querySelector(".home-btn");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+        homeBtn.style.right = "3vw";
+    } else {
+        homeBtn.style.right = "-30%";
+    }
+})

@@ -230,6 +230,24 @@ section.header nav .burger div:nth-child(3).active {
           transform: translateY(-7px) rotate(45deg);
 }
 
+section.header div.home-btn {
+  position: fixed;
+  right: -30%;
+  bottom: 2vh;
+  background-color: rgba(0, 0, 0, 0.459);
+  padding: 9px;
+  border-radius: 50%;
+  z-index: 1000;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.header div.home-btn i {
+  font-size: 36px;
+  color: #fff;
+  line-height: .9;
+}
+
 section.about {
   display: -webkit-box;
   display: -ms-flexbox;
