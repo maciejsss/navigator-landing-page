@@ -5,14 +5,13 @@ section.about {
     margin: 20px 0;
     overflow: hidden;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1025px) {
         flex-direction: row;
         align-items: center;
+
     }
 
-    @media (min-width: 1025px) {
-        margin: 60px 10px;
-    }
+    @media (min-width: 1025px) {}
 
     h1 {
         text-align: center;
@@ -28,20 +27,15 @@ section.about {
         &::after {
             content: "";
             position: absolute;
-            left: 0;
+            left: 50%;
             bottom: 0;
-            width: 80%;
+            transform: translateX(-50%);
+            width: 300px;
             height: 2px;
             margin: 0 auto;
             background-color: rgba(221, 221, 221, 0.774);
 
-            @media (min-width: 768px) {
-                width: 100%;
-            }
 
-            @media (min-width: 1025px) {
-                width: 76%;
-            }
         }
     }
 
